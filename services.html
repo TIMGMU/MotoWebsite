@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<header>
+<a href="#main" class="skip">Skip to main content</a>
+</header>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SSM Services</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon_io"/>
+  </head>
+<body>
+	  <style>
+		  .skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+		  .skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+		  * {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #6C9DAB;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #6C9DAB;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+		  body {
+			  padding:0;
+			  margin:0;
+			  background-image:url("louis_paulin_unsplash_bg.jpg");
+			  -webkit-background-size:cover;
+			  -moz-background-size:cover;
+			  -o-background-size:cover;
+			  background-position: center;
+			  background-size:cover;
+			
+			 
+			  
+			  
+			  
+		  }
+	  
+	  </style>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+	
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="SSM_Project3Logo_TimNguyendd.png" width="50" height="50" alt=""/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="motorcycles.html">Motorcycles</a>
+            </li>
+			<li class="nav-item"> <a class="nav-link" href="gear.html">Gear</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="components.html">Components</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="services.html">Services</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="contactus.html">Contact us</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="aboutus.html">About us</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="sitemap.html">Site map</a> </li>
+            <li class="nav-item"> </li>
+            
+            <li class="nav-item"> </li>
+          </ul>
+</div>
+      </div>
+    </nav>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12">
+		  <div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      December<br>
+      <span style="font-size:18px">2022</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+		  </div>
+      </div>
+      <hr>
+    </div>
+<hr>
+<main id="main">
+  <h2 class="text-center text-white">Services</h2>
+  <hr>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="forum.jpg" alt="forums image">
+            <div class="card-body">
+              <h5 class="card-title">Forums</h5>
+              <p class="card-text">Have any hard to answer questions or concerns? Well come visit our forums and check out what others had to say</p>
+              <a href="forums.html" class="btn btn-primary">See Forums</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0"><div class="mapouter"><div class="gmap_canvas"><iframe width="378" height="380" id="gmap_canvas" src="https://maps.google.com/maps?q=George%20Mason&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google map html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:378px;width:352px;}</style></div></div> </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="meetups.jpg" alt="handshake">
+            <div class="card-body">
+              <h5 class="card-title">Meet-ups</h5>
+              <p class="card-text">SSM offers a timesheet of upcoming meet-ups for our valued customers to meet other friendly faces.</p>
+              <a href="meetups.html" class="btn btn-primary">See Schedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+    <hr>
+<hr>
+<hr>
+    <div class="container text-white bg-dark p-4">
+      <div class="row">
+        <div class="col-6 col-md-8 col-lg-7">
+			<address>
+            <strong>SSM Owner: Tim Nguyen</strong><br>
+			<a>Email: </a>
+            <a href="mailto:#">tnguy95@gmu.edu</a>
+          </address>
+		  Disclaimer: This is a fictitious company and is developed as an education project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.
+        <div class="row text-center"></div>
+        </div>
+        <div class="col-md-4 col-lg-5 col-6">
+          <address>
+            <strong>SuperSport Motors Inc.</strong><br>
+            Premium Motorcycles<br>
+            Gainesville VA, 20155&nbsp;&nbsp;<br>
+            <abbr title="Phone">P:</abbr> (573) 456-7890
+          </address>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
